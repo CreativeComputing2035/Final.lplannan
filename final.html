@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown(5000);
+    });
+    $("#stop").click(function(){
+        $("#panel").stop();
+    });
+});
+</script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("div").click(function(){
+        $("div").animate({left: '250px'});
+    });
+});
+</script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("div").click(function(){
+        $("div").animate({
+            left: '250px',
+            opacity: '0.5',
+            height: '150px',
+            width: '150px'
+        });
+    });
+});
+</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("div").click(function(){
+    $("div").animate({
+    left: '250px',
+    height: '+=150px',
+    width: '+=150px'
+    });
+    });
+    });
+</script>
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("div").animate({
+    height: 'toggle'
+    });
+    });
+    });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script> 
+    $(document).ready(function(){
+        $("div").click(function(){
+            var div = $("div");
+            div.animate({height: '300px',
+                        opacity: '0.4'}, "slow");
+            div.animate({width: '100px', opacity:
+                        '0.8'}, "slow");
+        });
+    });
+    </script>
+<style> 
+#panel, #flip {
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    border: solid 1px #666;
+    border-radius: 3px;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+</head>
+<body>
+
+<div id="flip">Cool Stuff is going to Happen</div>
+<div id="panel">Click More</div>
+
+    <div style="background:red;height:100px;width:200px;position:absolute;"></div>
+    <div style="background:blue;height:200px;width:100px;position:absolute;"></div>
+    <div style="background:yellow;height:100px;width:400px;position:absolute;"></div>
+    <div style="background:purple;height:300px;width:100px;position:absolute;"></div>
+    <div style="background:gray;height:100px;width:100px;position:absolute;"></div>
+</body>
+</html>
